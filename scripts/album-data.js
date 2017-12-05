@@ -1,3 +1,4 @@
+
 const album = {
   title: 'The Colors',
   artist: 'Pablo Picasso',
