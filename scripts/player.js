@@ -7,19 +7,18 @@ class Player {
   }
 
   getDuration() {
-    return this.currentlyPlaying.duration;
+    return this.soundObject.getDuration();
   }
 
   getTime() {
     return this.soundObject.getTime();
   }
 
-  prettyTime(timeInSeconds) {
-    var min = Math.floor(timeInSeconds / 60 );
-    console.log(min);
-    return "-:--"
+  //prettyTime(timeInSeconds) {
+    //var min = Math.floor(timeInSeconds / 60 );
+    //console.log(min);
+    //return (min);
 
-  }
 
   playPause (song = this.currentlyPlaying) {
     if (this.currentlyPlaying !== song) {
